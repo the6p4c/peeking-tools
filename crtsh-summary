@@ -1,0 +1,18 @@
+#!/bin/sh
+# usage: crtsh-summary [json file...]
+#
+# displays a list of known domains using certificate transparency records from crt.sh
+set -euo pipefail
+
+if [ "$#" -eq "0" ]; then
+  >&2 echo "error: no files specified"
+  exit 1
+fi
+
+jq -sr '
+  flatten
+  | map([.common_name] + (.name_value | split("\n")))
+  | flatten
+  | unique
+  | sort_by(split(".") | reverse)[] # reverse DNS order
+' $@
