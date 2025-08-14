@@ -1,0 +1,6 @@
+#!/bin/sh
+# usage: dig-bulk
+#
+# performs a DNS queries for each domain provided on standard input
+xargs dig +noall +question +answer \
+  | sed '/^[^;]/ s/^/    /g' # indent answer lines
