@@ -2,5 +2,7 @@
 # usage: dig-bulk
 #
 # performs a DNS queries for each domain provided on standard input
+set -euo pipefail
+
 xargs dig +noall +question +answer \
   | sed '/^[^;]/ s/^/    /g' # indent answer lines
