@@ -1,0 +1,11 @@
+#!/bin/sh
+# usage: nmap-log ...
+#
+# runs nmap under sudo and logs output to nmap.log in append mode
+set -euo pipefail
+
+# if the log file doesn't already exist, nmap will create a log file owned by root. if we create it
+# first, we'll own it. --append-output won't change the file's owner.
+touch nmap.log
+
+sudo nmap --append-output -oN nmap.log $@
