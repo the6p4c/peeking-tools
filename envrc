@@ -1,4 +1,4 @@
 envrc_path=$(realpath "${BASH_SOURCE[0]}")
 tools_path=$(dirname "$envrc_path")
 
-PATH="$tools_path/bin:$PATH"
+PATH_add "$tools_path/bin"
