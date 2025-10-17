@@ -1,0 +1,951 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="bin/main" path="src/main/java"/>
+	<classpathentry kind="src" output="bin/test" path="src/test/java"/>
+	<classpathentry kind="src" output="bin/main" path="src/main/resources"/>
+	<classpathentry kind="src" output="bin/main" path="src/main/help"/>
+	<classpathentry kind="src" output="bin/scripts" path="ghidra_scripts"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/openjdk"/>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Processors/68000/lib/68000.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Processors/68000/lib/68000-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Processors/8051/lib/8051.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Processors/AARCH64/lib/AARCH64.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Processors/AARCH64/lib/AARCH64-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Processors/ARM/lib/ARM.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Processors/ARM/lib/ARM-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Debug/AnnotationValidator/lib/AnnotationValidator.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Debug/AnnotationValidator/lib/AnnotationValidator-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Processors/Atmel/lib/Atmel.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Processors/Atmel/lib/Atmel-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/BSim/lib/h2-2.2.220.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/BSim/lib/postgresql-42.7.6.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/BSim/lib/commons-pool2-2.11.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/BSim/lib/commons-dbcp2-2.9.0.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/BSim/lib/commons-logging-1.2.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/BSim/lib/BSim.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/BSim/lib/BSim-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/BSimFeatureVisualizer/lib/BSimFeatureVisualizer.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/BSimFeatureVisualizer/lib/BSimFeatureVisualizer-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/Base/lib/biz.aQute.bndlib-7.0.0.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/Base/lib/org.apache.felix.framework-7.0.5.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/Base/lib/org.osgi.util.promise-1.3.0.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/Base/lib/biz.aQute.bnd.util-7.0.0.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/Base/lib/phidias-0.3.7.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/Base/lib/Base.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/Base/lib/Base-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/Base/lib/slf4j-api-1.7.25.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/Base/lib/slf4j-nop-1.7.25.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/BytePatterns/lib/BytePatterns.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/BytePatterns/lib/BytePatterns-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/ByteViewer/lib/ByteViewer.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/ByteViewer/lib/ByteViewer-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/CodeCompare/lib/CodeCompare.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/CodeCompare/lib/CodeCompare-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Processors/DATA/lib/DATA.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Processors/DATA/lib/DATA-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/DB/lib/DB.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/DB/lib/DB-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Processors/Dalvik/lib/Dalvik.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Processors/Dalvik/lib/Dalvik-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/DebugUtils/lib/DebugUtils.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/DebugUtils/lib/DebugUtils-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Debug/Debugger/lib/Debugger.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Debug/Debugger/lib/Debugger-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Debug/Debugger-agent-dbgeng/lib/Debugger-agent-dbgeng.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Debug/Debugger-agent-drgn/lib/Debugger-agent-drgn.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Debug/Debugger-agent-gdb/lib/Debugger-agent-gdb.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Debug/Debugger-agent-lldb/lib/Debugger-agent-lldb.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Debug/Debugger-api/lib/Debugger-api.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Debug/Debugger-api/lib/Debugger-api-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Debug/Debugger-isf/lib/Debugger-isf.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Debug/Debugger-isf/lib/Debugger-isf-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Debug/Debugger-jpda/lib/Debugger-jpda.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Debug/Debugger-jpda/lib/Debugger-jpda-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Debug/Debugger-rmi-trace/lib/Debugger-rmi-trace.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Debug/Debugger-rmi-trace/lib/Debugger-rmi-trace-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/Decompiler/lib/Decompiler.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/Decompiler/lib/Decompiler-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/DecompilerDependent/lib/DecompilerDependent.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/DecompilerDependent/lib/DecompilerDependent-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Docking/lib/Docking.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Docking/lib/Docking-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Emulation/lib/asm-util-9.7.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Emulation/lib/asm-tree-9.7.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Emulation/lib/Emulation.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Emulation/lib/Emulation-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Emulation/lib/asm-9.7.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Emulation/lib/asm-commons-9.7.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Emulation/lib/asm-analysis-9.7.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/FileFormats/lib/util-2.5.2.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/FileFormats/lib/FileFormats.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/FileFormats/lib/FileFormats-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/FileFormats/lib/sevenzipjbinding-16.02-2.01.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/FileFormats/lib/dex-ir-2.4.24.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/FileFormats/lib/dex-reader-2.4.24.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/FileFormats/lib/baksmali-2.5.2.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/FileFormats/lib/sevenzipjbinding-all-platforms-16.02-2.01.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/FileFormats/lib/AXMLPrinter2.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/FileFormats/lib/dexlib2-2.5.2.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/FileFormats/lib/dex-reader-api-2.4.24.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/FileFormats/lib/dex-translator-2.4.24.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/FileSystem/lib/FileSystem.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/FileSystem/lib/FileSystem-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Debug/Framework-TraceModeling/lib/Framework-TraceModeling.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Debug/Framework-TraceModeling/lib/Framework-TraceModeling-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/FunctionGraph/lib/FunctionGraph.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/FunctionGraph/lib/FunctionGraph-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/FunctionGraphDecompilerExtension/lib/FunctionGraphDecompilerExtension.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/FunctionGraphDecompilerExtension/lib/FunctionGraphDecompilerExtension-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/FunctionID/lib/FunctionID.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/FunctionID/lib/FunctionID-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Generic/lib/bcprov-jdk18on-1.80.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Generic/lib/guava-32.1.3-jre.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Generic/lib/bcpkix-jdk18on-1.80.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Generic/lib/gson-2.9.0.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Generic/lib/commons-codec-1.18.0.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Generic/lib/bcutil-jdk18on-1.80.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Generic/lib/log4j-core-2.17.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Generic/lib/failureaccess-1.0.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Generic/lib/log4j-api-2.17.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Generic/lib/jdom-legacy-1.1.3.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Generic/lib/commons-lang3-3.17.0.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Generic/lib/commons-io-2.19.0.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Generic/lib/Generic.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Generic/lib/Generic-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Generic/lib/commons-collections4-4.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Generic/lib/commons-compress-1.27.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Generic/lib/commons-text-1.10.0.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/GhidraGo/lib/GhidraGo.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/GhidraGo/lib/GhidraGo-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/the6p4c/.config/ghidra/ghidra_11.4.2_NIX/Extensions/GhidraJupyterKotlin/lib/kotlin-scripting-dependencies-maven-all-2.0.21.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/the6p4c/.config/ghidra/ghidra_11.4.2_NIX/Extensions/GhidraJupyterKotlin/lib/annotations-24.1.0.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/the6p4c/.config/ghidra/ghidra_11.4.2_NIX/Extensions/GhidraJupyterKotlin/lib/kotlin-scripting-compiler-impl-embeddable-1.9.23.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/the6p4c/.config/ghidra/ghidra_11.4.2_NIX/Extensions/GhidraJupyterKotlin/lib/kotlin-scripting-dependencies-2.0.21.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/the6p4c/.config/ghidra/ghidra_11.4.2_NIX/Extensions/GhidraJupyterKotlin/lib/GhidraJupyterKotlin.jar" sourcepath="/home/the6p4c/.config/ghidra/ghidra_11.4.2_NIX/Extensions/GhidraJupyterKotlin/lib/GhidraJupyterKotlin-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/the6p4c/.config/ghidra/ghidra_11.4.2_NIX/Extensions/GhidraJupyterKotlin/lib/httpcore5-5.2.4.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/the6p4c/.config/ghidra/ghidra_11.4.2_NIX/Extensions/GhidraJupyterKotlin/lib/kotlin-reflect-1.9.23.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/the6p4c/.config/ghidra/ghidra_11.4.2_NIX/Extensions/GhidraJupyterKotlin/lib/kotlin-jupyter-common-dependencies-0.12.0-356.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/the6p4c/.config/ghidra/ghidra_11.4.2_NIX/Extensions/GhidraJupyterKotlin/lib/clikt-jvm-2.8.0.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/the6p4c/.config/ghidra/ghidra_11.4.2_NIX/Extensions/GhidraJupyterKotlin/lib/trove4j-1.0.20200330.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/the6p4c/.config/ghidra/ghidra_11.4.2_NIX/Extensions/GhidraJupyterKotlin/lib/jnacl-1.0.0.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/the6p4c/.config/ghidra/ghidra_11.4.2_NIX/Extensions/GhidraJupyterKotlin/lib/kotlin-stdlib-jdk7-1.8.10.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/the6p4c/.config/ghidra/ghidra_11.4.2_NIX/Extensions/GhidraJupyterKotlin/lib/jeromq-0.6.0.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/the6p4c/.config/ghidra/ghidra_11.4.2_NIX/Extensions/GhidraJupyterKotlin/lib/http4k-client-apache-5.14.4.0.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/the6p4c/.config/ghidra/ghidra_11.4.2_NIX/Extensions/GhidraJupyterKotlin/lib/kotlinx-serialization-json-jvm-1.6.3.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/the6p4c/.config/ghidra/ghidra_11.4.2_NIX/Extensions/GhidraJupyterKotlin/lib/kotlin-daemon-embeddable-1.9.23.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/the6p4c/.config/ghidra/ghidra_11.4.2_NIX/Extensions/GhidraJupyterKotlin/lib/kotlin-jupyter-kernel-0.12.0-356.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/the6p4c/.config/ghidra/ghidra_11.4.2_NIX/Extensions/GhidraJupyterKotlin/lib/kotlinx-serialization-core-jvm-1.6.3.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/the6p4c/.config/ghidra/ghidra_11.4.2_NIX/Extensions/GhidraJupyterKotlin/lib/http4k-core-5.14.4.0.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/the6p4c/.config/ghidra/ghidra_11.4.2_NIX/Extensions/GhidraJupyterKotlin/lib/kotlin-scripting-common-1.9.23.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/the6p4c/.config/ghidra/ghidra_11.4.2_NIX/Extensions/GhidraJupyterKotlin/lib/kotlin-jupyter-api-0.12.0-356.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/the6p4c/.config/ghidra/ghidra_11.4.2_NIX/Extensions/GhidraJupyterKotlin/lib/httpclient5-5.3.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/the6p4c/.config/ghidra/ghidra_11.4.2_NIX/Extensions/GhidraJupyterKotlin/lib/logback-classic-1.5.3.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/the6p4c/.config/ghidra/ghidra_11.4.2_NIX/Extensions/GhidraJupyterKotlin/lib/kotlin-jupyter-shared-compiler-0.12.0-356.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/the6p4c/.config/ghidra/ghidra_11.4.2_NIX/Extensions/GhidraJupyterKotlin/lib/kotlin-script-runtime-1.9.23.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/the6p4c/.config/ghidra/ghidra_11.4.2_NIX/Extensions/GhidraJupyterKotlin/lib/kotlin-scripting-ide-services-1.9.23.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/the6p4c/.config/ghidra/ghidra_11.4.2_NIX/Extensions/GhidraJupyterKotlin/lib/kotlin-jupyter-lib-0.12.0-356.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/the6p4c/.config/ghidra/ghidra_11.4.2_NIX/Extensions/GhidraJupyterKotlin/lib/kotlin-stdlib-1.9.23.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/the6p4c/.config/ghidra/ghidra_11.4.2_NIX/Extensions/GhidraJupyterKotlin/lib/slf4j-api-2.0.12.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/the6p4c/.config/ghidra/ghidra_11.4.2_NIX/Extensions/GhidraJupyterKotlin/lib/kotlin-stdlib-jdk8-1.8.10.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/the6p4c/.config/ghidra/ghidra_11.4.2_NIX/Extensions/GhidraJupyterKotlin/lib/kotlin-compiler-embeddable-1.9.23.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/the6p4c/.config/ghidra/ghidra_11.4.2_NIX/Extensions/GhidraJupyterKotlin/lib/kotlin-serialization-compiler-plugin-embeddable-1.9.23.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/the6p4c/.config/ghidra/ghidra_11.4.2_NIX/Extensions/GhidraJupyterKotlin/lib/json5k-jvm-0.3.0.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/the6p4c/.config/ghidra/ghidra_11.4.2_NIX/Extensions/GhidraJupyterKotlin/lib/kotlin-scripting-compiler-embeddable-1.9.23.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/the6p4c/.config/ghidra/ghidra_11.4.2_NIX/Extensions/GhidraJupyterKotlin/lib/logback-core-1.5.3.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/the6p4c/.config/ghidra/ghidra_11.4.2_NIX/Extensions/GhidraJupyterKotlin/lib/kotlinx-coroutines-core-jvm-1.8.0.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/the6p4c/.config/ghidra/ghidra_11.4.2_NIX/Extensions/GhidraJupyterKotlin/lib/kotlin-scripting-jvm-1.9.23.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/the6p4c/.config/ghidra/ghidra_11.4.2_NIX/Extensions/GhidraJupyterKotlin/lib/httpcore5-h2-5.2.4.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/GhidraServer/lib/GhidraServer.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/GhidraServer/lib/GhidraServer-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/GnuDemangler/lib/GnuDemangler.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/GnuDemangler/lib/GnuDemangler-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Graph/lib/jung-graph-impl-2.1.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Graph/lib/jgrapht-core-1.5.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Graph/lib/jgrapht-io-1.5.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Graph/lib/jung-visualization-2.1.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Graph/lib/Graph.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Graph/lib/Graph-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Graph/lib/jung-api-2.1.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Graph/lib/jung-algorithms-2.1.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/GraphFunctionCalls/lib/GraphFunctionCalls.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/GraphFunctionCalls/lib/GraphFunctionCalls-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/GraphServices/lib/jungrapht-visualization-1.4.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/GraphServices/lib/jgrapht-io-1.5.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/GraphServices/lib/jgrapht-core-1.5.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/GraphServices/lib/jungrapht-layout-1.4.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/GraphServices/lib/jheaps-0.13.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/GraphServices/lib/GraphServices.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/GraphServices/lib/GraphServices-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Gui/lib/flatlaf-3.5.4.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Gui/lib/Gui.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Gui/lib/Gui-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Processors/HCS12/lib/HCS12.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Processors/HCS12/lib/HCS12-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Help/lib/javahelp-2.0.05.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Help/lib/Help.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Help/lib/Help-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Help/lib/timingframework-1.0.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Processors/JVM/lib/JVM.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Processors/JVM/lib/JVM-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/Jython/lib/jython-standalone-2.7.4.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/Jython/lib/Jython.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/Jython/lib/Jython-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Processors/Loongarch/lib/Loongarch.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Processors/Loongarch/lib/Loongarch-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Processors/MIPS/lib/MIPS.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Processors/MIPS/lib/MIPS-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/MicrosoftCodeAnalyzer/lib/MicrosoftCodeAnalyzer.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/MicrosoftCodeAnalyzer/lib/MicrosoftCodeAnalyzer-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/MicrosoftDemangler/lib/MicrosoftDemangler.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/MicrosoftDemangler/lib/MicrosoftDemangler-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/MicrosoftDmang/lib/MicrosoftDmang.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/MicrosoftDmang/lib/MicrosoftDmang-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Processors/PA-RISC/lib/PA-RISC.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/PDB/lib/PDB.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/PDB/lib/PDB-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Processors/PIC/lib/PIC.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Processors/PIC/lib/PIC-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Processors/PowerPC/lib/PowerPC.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Processors/PowerPC/lib/PowerPC-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/ProgramDiff/lib/ProgramDiff.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/ProgramDiff/lib/ProgramDiff-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/ProgramGraph/lib/ProgramGraph.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/ProgramGraph/lib/ProgramGraph-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Project/lib/xz-1.9.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Project/lib/Project.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Project/lib/Project-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Debug/ProposedUtils/lib/ProposedUtils.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Debug/ProposedUtils/lib/ProposedUtils-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Debug/ProposedUtils/lib/protobuf-java-3.21.8.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Pty/lib/Pty.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Pty/lib/Pty-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Pty/lib/jna-5.14.0.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Pty/lib/jna-platform-5.14.0.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Configurations/Public_Release/lib/Public_Release.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/PyGhidra/lib/PyGhidra.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/PyGhidra/lib/PyGhidra-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Processors/RISCV/lib/RISCV.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Processors/RISCV/lib/RISCV-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/Recognizers/lib/Recognizers.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/Recognizers/lib/Recognizers-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/Sarif/lib/Sarif.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/Sarif/lib/Sarif-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/Sarif/lib/java-sarif-2.1-modified.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/SoftwareModeling/lib/SoftwareModeling.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/SoftwareModeling/lib/SoftwareModeling-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/SoftwareModeling/lib/antlr-runtime-3.5.2.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/SoftwareModeling/lib/xsdlib-20050913.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/SoftwareModeling/lib/isorelax-20050913.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/SoftwareModeling/lib/relaxngDatatype-20050913.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/SoftwareModeling/lib/msv-20050913.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/SourceCodeLookup/lib/SourceCodeLookup.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/SourceCodeLookup/lib/SourceCodeLookup-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Processors/Sparc/lib/Sparc.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Processors/Sparc/lib/Sparc-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Processors/SuperH4/lib/SuperH4.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Processors/SuperH4/lib/SuperH4-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/SwiftDemangler/lib/SwiftDemangler.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/SwiftDemangler/lib/SwiftDemangler-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/SystemEmulation/lib/SystemEmulation.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/SystemEmulation/lib/SystemEmulation-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Processors/TI_MSP430/lib/TI_MSP430.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Processors/TI_MSP430/lib/TI_MSP430-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Debug/TaintAnalysis/lib/TaintAnalysis.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Debug/TaintAnalysis/lib/TaintAnalysis-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Utility/lib/Utility.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Framework/Utility/lib/Utility-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Processors/V850/lib/V850.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/VersionTracking/lib/VersionTracking.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/VersionTracking/lib/VersionTracking-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/VersionTrackingBSim/lib/VersionTrackingBSim.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/VersionTrackingBSim/lib/VersionTrackingBSim-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/WildcardAssembler/lib/WildcardAssembler.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Features/WildcardAssembler/lib/WildcardAssembler-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Processors/Xtensa/lib/Xtensa.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Processors/Xtensa/lib/Xtensa-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Processors/eBPF/lib/eBPF.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Processors/eBPF/lib/eBPF-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Processors/tricore/lib/tricore.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Processors/tricore/lib/tricore-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Processors/x86/lib/x86.jar" sourcepath="/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/Ghidra/Processors/x86/lib/x86-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra/docs/GhidraAPI_javadoc.zip!/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin/main"/>
+</classpath>

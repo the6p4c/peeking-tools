@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>MipsPicAnalyzer</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>Ghidra</name>
+			<type>2</type>
+			<location>/nix/store/f2jpwlk0jnx793cg1bmxky8pq990hiw4-ghidra-11.4.2/lib/ghidra</location>
+		</link>
+	</linkedResources>
+</projectDescription>
