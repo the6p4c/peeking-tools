@@ -21,6 +21,7 @@ import ghidra.app.services.AbstractAnalyzer;
 import ghidra.app.services.AnalyzerType;
 import ghidra.app.util.importer.MessageLog;
 import ghidra.program.model.address.AddressSetView;
+import ghidra.program.model.lang.Processor;
 import ghidra.program.model.lang.Register;
 import ghidra.program.model.listing.ContextChangeException;
 import ghidra.program.model.listing.Function;
@@ -45,8 +46,7 @@ public class MipsPicAnalyzer extends AbstractAnalyzer {
 
 	@Override
 	public boolean canAnalyze(Program program) {
-		// TODO: ensure this is a MIPS program
-		return true;
+		return program.getLanguage().getProcessor() == Processor.toProcessor("MIPS");
 	}
 
 	@Override
